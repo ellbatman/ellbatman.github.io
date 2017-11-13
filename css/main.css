@@ -117,7 +117,7 @@ Navigation
     padding: 12px 20px 12px 20px;
     border: 0;
     color: #0E5E5B; }
-  .searchBar #searchTxt[type=text]:focus {
+  .searchBar #searchTxt[type=text]:hover {
     outline: none;
     width: 400px; }
 

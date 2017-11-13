@@ -83,7 +83,7 @@
     // text-overflow: ellipsis;
     // width: 100%;
   }
-  #searchTxt[type=text]:focus {
+  #searchTxt[type=text]:hover {
       outline: none;
       width: 400px;
   }
