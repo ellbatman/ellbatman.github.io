@@ -3,7 +3,7 @@
   flex-flow: row wrap;
   justify-content: center;
   width: 80vw;
-  padding-top: 6vh;
+  padding-top: 2vh;
 }
 .thread {
   border-radius: 5px 5px 3px 3px;
@@ -32,13 +32,15 @@
   a:hover {
     text-decoration: underline;
   }
+  &:hover {
+    z-index: 99999;
+  }
 }
 .mainImg {
 	width: 100%;
 	padding-top: 100%; /*to set the same as width, because height: 100% isn't working*/
   background-size: cover;
   background-position: center;
-  height: 100%;
   border-radius: 5px 5px 0 0;
   background-repeat: no-repeat;
   @extend %animation;

@@ -1,6 +1,6 @@
 var headerTxt = new Typed('.headerTxt', {
     contentType: 'text',
-    strings: ['We Are Building Communities', 'We Are Sustaining Initiatives', 'We Are Exploring Alternatives', 'We Are TIES', 'Technology, Innovation, Entrepreneurship, & Sustainability'],
+    strings: ['We Are Building Communities', 'We Are Sustaining Initiatives', 'We Are Exploring Alternatives', 'We Are Creating Ties', 'Technology, Innovation, Entrepreneurship, & Sustainability'],
     typeSpeed: 50,
     backSpeed: 10,
     smartBackspace: true,
@@ -20,5 +20,4 @@ $('#searchTxt').hover(function(){
       attr: 'placeholder',
       bindInputFocusEvents: true,
   });
-  $('#searchTxt').removeData();
 });

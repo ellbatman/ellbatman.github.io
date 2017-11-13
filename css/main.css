@@ -135,7 +135,8 @@ Header
   align-items: center;
   background-image: url("https://images.unsplash.com/photo-1496309732348-3627f3f040ee?auto=format&fit=crop&w=1650&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  text-align: center; }
   .header span {
     font-size: 40px;
     color: white;
@@ -294,7 +295,7 @@ Main Content
   flex-flow: row wrap;
   justify-content: center;
   width: 80vw;
-  padding-top: 6vh; }
+  padding-top: 2vh; }
 
 .thread {
   border-radius: 5px 5px 3px 3px;
@@ -318,6 +319,8 @@ Main Content
     color: inherit; }
   .thread a:hover {
     text-decoration: underline; }
+  .thread:hover {
+    z-index: 99999; }
 
 .mainImg {
   width: 100%;
@@ -325,7 +328,6 @@ Main Content
   /*to set the same as width, because height: 100% isn't working*/
   background-size: cover;
   background-position: center;
-  height: 100%;
   border-radius: 5px 5px 0 0;
   background-repeat: no-repeat;
   cursor: zoom-in; }
@@ -492,5 +494,15 @@ footer {
   height: 40vh;
   width: 100vw;
   background-color: white; }
+
+/*==========================================================================
+Media Queries
+==========================================================================*/
+@media screen and (max-width: 1111px) {
+  .header .headerTxt {
+    font-size: 30px; } }
+@media screen and (max-width: 850px) {
+  .header .headerTxt {
+    font-size: 25px; } }
 
 /*# sourceMappingURL=main.css.map */

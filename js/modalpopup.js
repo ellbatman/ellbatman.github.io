@@ -27,7 +27,10 @@ function populateModal(elt) {
 	//Project Details Data
 	//Add Project Images & Descriptions
 	//Append Divs to store image and text according to number of images stored in imgs matrix
+
 	for (i = 0; i < threads[num].imgs.length; i++){
+    console.log(threads[num].imgsTxt[i]);
+
 		//Adds a div to the projectImages for each image stored in the database
 		$('.projectImages').append('<div class="imgDiv"><p class="imgTxt"></p></div>');
 		projSide.find('.imgDiv:nth-of-type('+(i+1)+')').css('background-image', threads[num].imgs[i]);

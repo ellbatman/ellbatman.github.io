@@ -56,3 +56,16 @@ Main Content
 @import 'threads.scss';
 @import 'modalPopup.scss';
 @import 'footer.scss';
+/*==========================================================================
+Media Queries
+==========================================================================*/
+@media screen and (max-width: 1111px) {
+  .header .headerTxt {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .header .headerTxt {
+    font-size: 25px;
+  }
+}
