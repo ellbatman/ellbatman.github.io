@@ -1,5 +1,6 @@
-var weAre = new Typed('.weAre', {
-    strings: ['We Are <span>Building Community</span>', 'We Are <span>Sustaining Initiatives</span>', 'We Are <span>Exploring Alternatives</span>', 'We Are <span>TIES</span>', 'Technology, Innovation, Entrepreneurship, &amp Sustainability' ],
+var headerTxt = new Typed('.headerTxt', {
+    contentType: 'text',
+    strings: ['We Are Building Community', 'We Are Sustaining Initiatives', 'We Are Exploring Alternatives', 'We Are TIES', 'Technology, Innovation, Entrepreneurship, & Sustainability'],
     typeSpeed: 50,
     backSpeed: 10,
     smartBackspace: true,
