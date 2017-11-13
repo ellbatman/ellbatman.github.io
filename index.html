@@ -1,1 +1,116 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>TIES | Home</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="ties_icon" src="../ties_icon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/jquery-1.12.0.min.js"></script>
+  <script src="js/vendor/jquery.typed.js"></script>
+</head>
+<body>
+  <div class="navWrapper">
+    <nav class="navBar">
+      <div class="leftNav">
+        <img src="images/infinity_logo.png" alt="Infinity Logo"></img>
+        <div class="searchBar">
+          <svg class="searchIcon" height="20" width="20" viewBox="0 0 24 24" aria-label="Search icon" role="img" data-reactid="30">
+            <title data-reactid="31">Search icon</title>
+            <path d="M10.00,16.00 C6.69,16.00 4.00,13.31 4.00,10.00 C4.00,6.69 6.69,4.00 10.00,4.00 C13.31,4.00 16.00,6.69 16.00,10.00 C16.00,13.31 13.31,16.00 10.00,16.00 M23.12,18.88 L18.86,14.62 C19.59,13.24 20.00,11.67 20.00,10.00 C20.00,4.48 15.52,0.00 10.00,0.00 C4.48,0.00 0.00,4.48 0.00,10.00 C0.00,15.52 4.48,20.00 10.00,20.00 C11.67,20.00 13.24,19.59 14.62,18.86 L18.88,23.12 C20.05,24.29 21.95,24.29 23.12,23.12 C24.29,21.95 24.29,20.05 23.12,18.88" data-reactid="32"></path>
+          </svg>
+          <input id="searchTxt" type="text" name="search" placeholder="Discover">
+        </div>
+      </div>
+      <div class="rightNav">
+        <a class="about">About</a>
+        <a class="developers">Developers</a>
+        <a class="developers">Login</a>
+      </div>
+    </nav>
+  </div>
+  <header class="header">
+    <div class="overlay"></div>
+    <span class="weAre"></span>
+  </header>
+  <div class="contentButtons">
+    <div class="addButton">
+      <div class="left contentButton">
+        <a class="button bottom" id="addIdea" href="#"></a>
+        <a class="button middle" id="addProject" href="#"></a>
+        <a class="button top" id="addOrganization" href="#"></a>
+      </div>
+    </div>
+    <div class="filterButton">
+      <div class="right contentButton">
+        <a class="button bottom" id="filterIdea" href="#"></a>
+        <a class="button middle" id="filterProject" href="#"></a>
+        <a class="button top" id="filterOrganization" href="#"></a>
+      </div>
+    </div>
+  </div>
+  <main>
+    <article class="threads">
+    </article>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="social-links">
+        <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      <input type="text" placeholder="Email Address">
+      <button type="submit">Subscribe</button>
+    </div>
+    <p class="copyright">&copy;2017 <a href="">Luke Bateman</a></p>
+  </footer>
+  <div id='modalPopup'>
+    <a class="modal_close">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 313.4 313.4" style="enable-background:new 0 0 313.4 313.4;" xml:space="preserve">
+        <style type="text/css">.X {fill:black;}</style>
+        <title>X</title>
+        <polygon class="X" points="313.4,26.2 287.2,0 156.7,130.5 26.2,0 0,26.2 130.5,156.7 0,287.2 26.2,313.4 156.7,182.9 287.2,313.4 313.4,287.2 182.9,156.7 "/>
+      </svg>
+    </a>
+    <div class="projectSide">
+      <div class="projectHead">
+        <h2 class="org"></h2>
+        <h1 class="title"></h1>
+        <h3 class="subtitle"></h3>
+        <h4 class="cat"></h4>
+      </div>
+      <div class="mainImg"></div>
+      <div class="projectDetails">
+        <div class="projectImages"></div>
+        <div class="projectInfo">
+          <h1>Problem</h1><br>
+          <p class="prob"></p><br>
+          <h1>Solution</h1><br>
+          <p class="sol"></p><br>
+          <h1>Final</h1><br>
+          <p class="fin"></p><br>
+          <a target="_blank" class="gDrive">More Info</a>
+        </div>
+      </div>
+    </div>
+    <div class="devSide"></div>
+    <!--
+    <div class="teammates"><div class="teammateOverlay"><div class="teammatePic"></div></div><a class="teammateName"></a></div>
+    -->
+</div>
+<script src="js/main.js"></script>
+<script src="js/vendor/jquery.leanModal.min.js"></script>
+<script src="js/modalPopup.js"></script>
+<script src="js/typed.js"></script>
+
+
+</body>
+</html>

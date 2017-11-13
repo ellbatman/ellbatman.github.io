@@ -1,0 +1,58 @@
+/*==========================================================================
+Global Variables
+==========================================================================*/
+$icon-lineWidth: .25em;
+$main-font-color: #112725;
+$lighten: 20%;
+@import 'animations.scss';
+/*==========================================================================
+Base styles:
+==========================================================================*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    letter-spacing: .02em;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: $main-font-color;
+  }
+img {
+    max-width: 100%;
+  }
+main {
+  @extend %animation;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom,#122623 0%, #023C5D 30%, #03535D 60%, #1B9250 100%);
+  background-attachment: fixed;
+  z-index: -2;
+  padding-bottom: 40px;
+}
+a {
+  text-decoration: none;
+  &:visited {
+    color: inherit;
+  }
+}
+/*==========================================================================
+Navigation
+==========================================================================*/
+@import 'navBar.scss';
+/*==========================================================================
+Header
+==========================================================================*/
+@import 'header.scss';
+/*==========================================================================
+Content Buttons
+==========================================================================*/
+@import 'contentButtons.scss';
+/*==========================================================================
+Main Content
+==========================================================================*/
+@import 'threads.scss';
+@import 'modalPopup.scss';
+@import 'footer.scss';

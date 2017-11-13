@@ -1,0 +1,67 @@
+/* Modal Popup */
+#modalPopup {
+  display: none;
+  position: relative;
+  background-color: white;
+  border: 2px solid white;
+  width: 95vw;
+  height: 90vh;
+  overflow: scroll;
+  margin: 0 auto;
+  padding: 30px; }
+
+#modalPopup .modal_close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 20px; }
+  #modalPopup .modal_close svg:hover .X {
+    fill: grey; }
+
+#modalPopup .projectSide .mainImg {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  width: 200px;
+  padding-top: 200px;
+  /*to set the same as width, because height: 100% isn't working */
+  margin: 0 auto; }
+
+#modalPopup .projectImages .imgDiv {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  width: 200px;
+  padding-top: 200px;
+  /*to set the same as width, because height: 100% isn't working */
+  margin: 0 auto; }
+
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+  cursor: zoom-out; }
+
+/*#modalPopup .personImg-border {
+	width: 200px;
+
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+
+	z-index: 1;
+
+	pointer-events: none;
+}
+*/
+
+/*# sourceMappingURL=modalPopup.css.map */

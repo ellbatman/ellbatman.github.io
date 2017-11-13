@@ -1,0 +1,142 @@
+.threads {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 80vw;
+  padding-top: 6vh;
+}
+.thread {
+  border-radius: 5px 5px 3px 3px;
+  box-shadow: 0 5px 2px rgba(25,25,25,0.2);
+  -moz-box-shadow: 0 5px 2px rgba(25,25,25,0.2);
+  -webkit-box-shadow: 0 5px 2px rgba(25,25,25,0.2);
+  color: #191919;
+  width: 200px;
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin: 1%;
+  a {
+    color: #102A2C;
+    display: block;
+  }
+  a:visited {
+    color: inherit;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+.mainImg {
+	width: 100%;
+	padding-top: 100%; /*to set the same as width, because height: 100% isn't working*/
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  background-repeat: no-repeat;
+  @extend %animation;
+  cursor: zoom-in;
+}
+.mainImg:hover {
+  filter: brightness(70%);
+  -webkit-filter: brightness(70%);
+  @extend %animation;
+}
+.threadDetails {
+  margin: 10px;
+  position: relative;
+  div {
+    background-color:#102A2C;
+    width: 20px;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
+.threadTitle {
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.threadTitle:hover {}
+.threadOrg {
+  font-size: 15px;
+
+}
+.threadCat {
+  font-size: 12px;
+  bottom: 0;
+}
+
+/*
+@media (min-width: 1200px) {
+	.thread {
+		width: 30%;
+		margin-right: 10%;
+	}
+}
+
+@media (min-width: 750px) {
+	.thread {
+		width: 20%;
+		margin-right: 5%;
+	}
+}
+@media (min-width: 1000px) {
+	.thread {
+		width: 28%;
+		margin-right: 5%;
+	}
+}
+.projectLink-img {
+	border-radius: 50%;
+	display: inline-block;
+	width: 90%;
+	padding-top: 90%;
+}
+.projectLink-txt {
+	font-size: 1.3em;
+	font-weight: 500;
+	color: #241F59;
+	border-bottom: 1px solid #241F59;
+}
+@media (min-width: 1200px) {
+	.projectLink-txt:hover {
+		color: #00B5AD;
+		border-bottom: 1px solid #00B5AD;
+	}
+	.companyName:hover {
+		color: #00B5AD;
+		border-bottom: 1px solid #00B5AD;
+	}
+}
+.schoolTag {
+	font-size: 1.0em;
+	margin-top: 5px;
+}
+.threads .schoolTag {
+	margin-bottom: 0;
+}
+.projectLink-txt {
+	font-size: 1.2em;
+}
+.committeeRole {
+	font-size: 1.0em;
+}
+.companyName {
+	position: relative;
+	font-size: 1.2em;
+	top: 5px;
+
+	color: #241F59;
+	border-bottom: 1px solid #241F59;
+
+	margin-bottom: 15px;
+}
+*/

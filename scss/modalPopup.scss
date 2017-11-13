@@ -1,0 +1,192 @@
+/* Modal Popup */
+#modalPopup {
+	display: none;
+
+	position: relative;
+
+	background-color: white;
+	border: 2px solid white;
+
+	width: 95vw;
+	height: 90vh;
+	overflow: scroll;
+
+	margin: 0 auto;
+
+	padding: 30px;
+}
+#modalPopup .modal_close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 20px;
+	svg:hover .X {
+			fill: grey;
+	}
+}
+#modalPopup .projectSide {
+	.mainImg {
+		position: relative;
+		margin-top: 15px;
+		margin-bottom: 30px;
+		border-radius: 50%;
+		width: 200px;
+		padding-top: 200px; /*to set the same as width, because height: 100% isn't working */
+
+		margin: 0 auto;
+	}
+}
+#modalPopup .projectHead {
+	//daf
+}
+#modalPopup .projectDetails {
+	//adfsa
+}
+#modalPopup .projectImages {
+	.imgDiv {
+		position: relative;
+		margin-top: 15px;
+		margin-bottom: 30px;
+		border-radius: 50%;
+		width: 200px;
+		padding-top: 200px; /*to set the same as width, because height: 100% isn't working */
+
+		margin: 0 auto;
+	}
+	.imgTxt {
+		//asdf
+	}
+}
+#modalPopup .projectInfo {
+	.prob {
+	}
+	.sol {
+		//asdf
+	}
+	.fin {
+		//asdf
+	}
+
+}
+#modalPopup .devSide {
+	.devs {
+	}
+	.picOverlay {
+
+	}
+	.devPic {
+
+	}
+	.devName {
+
+	}
+}
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+		cursor: zoom-out;
+}
+
+//Media Queries!!! Need for responsive window size
+// #modalPopup .name {
+// 	line-height: 1.35em;
+// 	font-size: 1.3em;
+//
+// 	color: #241F59;
+// 	border-bottom: solid 1px #241F59;
+// }
+// #modalPopup .bio {
+// 	margin-top: 15px;
+// 	margin-bottom: 10px;
+// }
+// #modalPopup .bio a {
+// 	color: #241F59;
+// 	border-bottom: 1px #241F59 solid;
+// }
+//
+//
+// @media (min-width: 1200px) {
+// 	#modalPopup .name:hover {
+// 		color: #FFD400;
+// 		border-bottom: solid 1px #FFD400;
+// 	}
+// }
+//
+// @media (min-width: 600px) {
+// 	#modalPopup .personImg-border {
+// 		width: 300px;
+// 	}
+// 	#modalPopup .personImg {
+// 		width: 300px;
+// 		padding-top: 300px; /*to set the same as width, because height: 100% isn't working */
+// 	}
+// }
+//
+// @media (min-width: 1200px) {
+// 	#modalPopup .modal_close svg .X {
+// 		-webkit-transition: 0.2s all;
+// 		transition: 0.2s all;
+// 	}
+
+// }
+
+// @media (min-width: 1200px) {
+// 	#modalPopup .bio a:hover {
+// 		color: #FFD400;
+// 		border-bottom: 1px #FFD400 solid;
+// 	}
+// }
+
+
+// Modal desktop
+// @media (min-width: 1200px) {
+// 	#modalPopup {
+// 		width: 1200px;
+// 	}
+//
+// 	#modalPopup .imgDiv {
+// 		float: left;
+// 		margin-bottom: 0;
+// 	}
+
+	// #modalPopup .textDiv {
+	// 	float: right;
+	// 	width: calc(100% - 330px);
+  //
+	// 	margin-top: 15px;
+	// 	margin-bottom: 15px;
+	// 	max-height: 60vh;
+	// 	min-height: 300px;
+	// 	overflow: scroll;
+	// }
+
+	// #modalPopup .personImg-border {
+	// 	width: 300px;
+	// }
+	// #modalPopup .personImg {
+	// 	width: 300px;
+	// 	padding-top: 300px; /*to set the same as width, because height: 100% isn't working */
+	// }
+//}
+
+
+/*#modalPopup .personImg-border {
+	width: 200px;
+
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+
+	z-index: 1;
+
+	pointer-events: none;
+}
+*/

@@ -1,0 +1,8 @@
+footer {
+  position: relative;
+  z-index: 1;
+  height: 40vh;
+  width: 100vw;
+  background-color: white;
+  @extend %animation;
+}

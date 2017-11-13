@@ -1,0 +1,122 @@
+//General Styles for all content buttons
+.contentButtons {
+  z-index: -1;
+}
+.contentButton {
+  position: fixed;
+  bottom: 0;
+  width: 65px;
+  height: 65px;
+  background: white;
+  border-radius: 50px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, .5);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  cursor: pointer;
+  @extend %animation;
+  a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    background-color: transparent;
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    border: 2px solid #0E5E5B;
+    border-radius: 50px;
+    @extend %animation;
+    &:hover {
+      background-color: #0E5E5B;
+    }
+  }
+}
+.contentButton:hover, .contentButton:focus {
+  height: 270px;
+  @extend %animation;
+  .bottom {
+    bottom: 90px;
+    -webkit-transition-delay: all .1s ease-in-out;
+    -moz-transition-delay: all .1s ease-in-out;
+    -ms-transition-delay: all .1s ease-in-out;
+    -o-transition-delay: all .1s ease-in-out;
+    transition-delay: all .1s ease-in-out;
+  }
+  .middle {
+    bottom: 100px;
+    -webkit-transition-delay: all .4s ease-in-out;
+    -moz-transition-delay: all .4s ease-in-out;
+    -ms-transition-delay: all .4s ease-in-out;
+    -o-transition-delay: all .4s ease-in-out;
+    transition-delay: all .4s ease-in-out;
+  }
+  .top {
+    bottom: 110px;
+    -webkit-transition-delay: all .6s ease-in-out;
+    -moz-transition-delay: all .6s ease-in-out;
+    -ms-transition-delay: all .6s ease-in-out;
+    -o-transition-delay: all .6s ease-in-out;
+    transition-delay: all .6s ease-in-out;
+  }
+
+}
+.contentButton:hover a {
+  position: relative;
+  opacity: 1;
+  @extend %animation;
+}
+.button {
+  opacity: 0;
+}
+//Left Content Button (Add Button)
+.addButton {
+  left: 0;
+  .left {
+    margin-left: 25px;
+  }
+}
+#addIdea {
+  background-image: url('https://image.flaticon.com/icons/png/128/116/116878.png');
+
+}
+#addProject {
+  background-image: url('https://image.flaticon.com/icons/png/128/116/116878.png');
+
+
+}
+#addOrganization {
+  background-image: url('https://image.flaticon.com/icons/png/128/116/116878.png');
+
+}
+//Right Content Button (Filter Button)
+.filterButton{
+  float: right;
+  position: fixed;
+  right: 0;
+  background-image: url('https://image.flaticon.com/icons/png/128/116/116878.png');
+  background-position: center;
+  background-size: 45px;
+  background-repeat: no-repeat;
+  transform: translateX(-100px);
+  bottom: 0;
+  .right {
+  }
+}
+#filterIdea {
+  background-image: url('https://image.flaticon.com/icons/png/128/116/116878.png');
+
+}
+#filterProject {
+  background-image: url('https://image.flaticon.com/icons/png/128/116/116878.png');
+
+}
+#filterOrganization {
+  background-image: url('https://image.flaticon.com/icons/png/128/116/116878.png');
+
+}
