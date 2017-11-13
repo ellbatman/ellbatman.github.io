@@ -1,5 +1,5 @@
 var weAre = new Typed('.weAre', {
-    strings: ['We Are <span>Building Community</span>', 'We Are <span>Sustaining Initiatives</span>', 'We Are <span>Exploring Alternatives</span>', 'We Are <span>Infinished</span>', ],
+    strings: ['We Are <span>Building Community</span>', 'We Are <span>Sustaining Initiatives</span>', 'We Are <span>Exploring Alternatives</span>', 'We Are <span>TIES</span>', 'Technology, Innovation, Entrepreneurship, &amp Sustainability' ],
     typeSpeed: 50,
     backSpeed: 10,
     smartBackspace: true,
