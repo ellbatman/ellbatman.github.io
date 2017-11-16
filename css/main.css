@@ -194,8 +194,8 @@ Content Buttons
 .contentButton {
   position: fixed;
   bottom: 0;
-  width: 65px;
-  height: 65px;
+  width: 80px;
+  height: 80px;
   background: white;
   border-radius: 50px;
   margin-bottom: 25px;
@@ -205,41 +205,44 @@ Content Buttons
   align-items: center;
   cursor: pointer; }
   .contentButton a {
+    font-size: 8px;
+    text-align: center;
+    padding-top: 40px;
     color: black;
     text-decoration: none;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     position: absolute;
     bottom: 0;
     opacity: 0;
     background-color: transparent;
-    background-position: center;
-    background-size: 30px;
+    background-position: 50% 30%;
+    background-size: 38px;
     background-repeat: no-repeat;
-    border: 2px solid #0E5E5B;
+    border: 0.5px solid #C6C6C6;
     border-radius: 50px; }
     .contentButton a:hover {
-      background-color: #0E5E5B; }
+      background-color: #C6C6C6; }
 
 .contentButton:hover, .contentButton:focus {
-  height: 270px; }
+  height: 350px; }
   .contentButton:hover .bottom, .contentButton:focus .bottom {
-    bottom: 90px;
+    bottom: 95px;
     -webkit-transition-delay: all .1s ease-in-out;
     -moz-transition-delay: all .1s ease-in-out;
     -ms-transition-delay: all .1s ease-in-out;
     -o-transition-delay: all .1s ease-in-out;
     transition-delay: all .1s ease-in-out; }
   .contentButton:hover .middle, .contentButton:focus .middle {
-    bottom: 100px;
+    bottom: 110px;
     -webkit-transition-delay: all .4s ease-in-out;
     -moz-transition-delay: all .4s ease-in-out;
     -ms-transition-delay: all .4s ease-in-out;
     -o-transition-delay: all .4s ease-in-out;
     transition-delay: all .4s ease-in-out; }
   .contentButton:hover .top, .contentButton:focus .top {
-    bottom: 110px;
+    bottom: 125px;
     -webkit-transition-delay: all .6s ease-in-out;
     -moz-transition-delay: all .6s ease-in-out;
     -ms-transition-delay: all .6s ease-in-out;
@@ -256,36 +259,47 @@ Content Buttons
 .addButton {
   left: 0; }
   .addButton .left {
-    margin-left: 25px; }
+    margin-left: 25px;
+    background-image: url("../icon/add.png");
+    background-position: 50% 50%;
+    background-size: 45px;
+    background-repeat: no-repeat; }
+    .addButton .left:hover {
+      background-position: 50% 92%; }
 
 #addIdea {
-  background-image: url("https://image.flaticon.com/icons/png/128/116/116878.png"); }
+  background-image: url("../icon/add-idea.png"); }
 
 #addProject {
-  background-image: url("https://image.flaticon.com/icons/png/128/116/116878.png"); }
+  background-image: url("../icon/add-proj.png"); }
 
 #addOrganization {
-  background-image: url("https://image.flaticon.com/icons/png/128/116/116878.png"); }
+  background-image: url("../icon/add-org.png"); }
 
 .filterButton {
   float: right;
   position: fixed;
   right: 0;
-  background-image: url("https://image.flaticon.com/icons/png/128/116/116878.png");
-  background-position: center;
-  background-size: 45px;
-  background-repeat: no-repeat;
-  transform: translateX(-100px);
+  width: 100px;
+  height: 80px;
+  transform: translateX(-20px);
   bottom: 0; }
+  .filterButton .right {
+    background-image: url("../icon/filter.png");
+    background-position: 50% 50%;
+    background-size: 45px;
+    background-repeat: no-repeat; }
+    .filterButton .right:hover {
+      background-position: 50% 92%; }
 
 #filterIdea {
-  background-image: url("https://image.flaticon.com/icons/png/128/116/116878.png"); }
+  background-image: url("../icon/filter-idea.png"); }
 
 #filterProject {
-  background-image: url("https://image.flaticon.com/icons/png/128/116/116878.png"); }
+  background-image: url("../icon/filter-proj.png"); }
 
 #filterOrganization {
-  background-image: url("https://image.flaticon.com/icons/png/128/116/116878.png"); }
+  background-image: url("../icon/filter-org.png"); }
 
 /*==========================================================================
 Main Content
@@ -429,39 +443,91 @@ Main Content
   position: relative;
   background-color: white;
   border: 2px solid white;
-  width: 95vw;
-  height: 90vh;
-  overflow: scroll;
+  width: 93vw;
+  height: 93vh;
+  overflow: auto;
   margin: 0 auto;
-  padding: 30px; }
+  padding: 10px 20px; }
 
 #modalPopup .modal_close {
-  position: absolute;
+  position: fixed;
   top: 15px;
   right: 15px;
   width: 20px; }
+  #modalPopup .modal_close svg .X {
+    fill: white; }
   #modalPopup .modal_close svg:hover .X {
     fill: grey; }
 
-#modalPopup .projectSide .mainImg {
-  position: relative;
-  margin-top: 15px;
-  margin-bottom: 30px;
-  border-radius: 50%;
-  width: 200px;
-  padding-top: 200px;
-  /*to set the same as width, because height: 100% isn't working */
-  margin: 0 auto; }
+#modalPopup .projectSide {
+  padding-right: 1vw; }
+
+#modalPopup .projectHead {
+  align-self: flex-start;
+  width: 100%;
+  color: white;
+  background-color: #232323;
+  border-color: #232323;
+  padding: 30px 20px; }
+  #modalPopup .projectHead .cat {
+    font-weight: lighter;
+    font-size: 16px;
+    padding-bottom: 5px; }
+  #modalPopup .projectHead .org {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 10px; }
+  #modalPopup .projectHead .title {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px; }
+  #modalPopup .projectHead .subtitle {
+    font-weight: normal;
+    font-size: 14px;
+    margin-right: 25vw; }
 
 #modalPopup .projectImages .imgDiv {
   position: relative;
   margin-top: 15px;
   margin-bottom: 30px;
-  border-radius: 50%;
-  width: 200px;
-  padding-top: 200px;
-  /*to set the same as width, because height: 100% isn't working */
-  margin: 0 auto; }
+  height: 600px;
+  width: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column-reverse; }
+#modalPopup .projectImages .imgDiv:hover .imgTxt {
+  visibility: visible;
+  opacity: 1; }
+#modalPopup .projectImages .imgTxt {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 30px 50px; }
+
+#modalPopup .projectInfo h1 {
+  margin-bottom: 10px; }
+#modalPopup .projectInfo p {
+  padding: 0 20px;
+  line-height: 30px; }
+
+#modalPopup .devSide {
+  display: flex;
+  float: right;
+  width: 30vw;
+  flex-direction: column;
+  align-items: center;
+  background-color: #232323;
+  color: white;
+  padding: 20px;
+  position: fixed; }
+  #modalPopup .devSide .devs {
+    padding: 10px 50px; }
 
 #lean_overlay {
   position: fixed;

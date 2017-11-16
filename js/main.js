@@ -1,3 +1,12 @@
+//https://github.com/liddiard/yagsa - Grab Google Sheets Data
+//THis stuff below isn't working, need to use stuff above
+Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vTRaoEG520W4d_ny5vjTADiB-eXsKUagqIUPDb_xljD-HZNu862GXFqQX2RV50G_bshucdcQOcuRmPE/pub?output=csv", {
+	download: true,
+	complete: function(results) {
+		console.log(results);
+	}
+});
+
 var developers = [
 	//Luke Bateman
 	{
@@ -196,16 +205,16 @@ var threads = [
 ];
 //Creates threads equal to the amount stored in the threads array and assigns them ids associated with their stored id variable
 for (i = 0; i < threads.length; i++) {
-	$('.threads').append('<div class="thread js-tilt"><a rel="leanModal" onclick="populateModal($(this)); return true;" class="threadLink mainImg" href="#modalPopup"></a><div class="threadDetails"><a rel="leanModal" onclick="populateModal($(this)); return true;" class="threadLink threadTitle" href="#modalPopup"></a><a rel="leanModal" onclick="populateModal($(this)); return true;" class="threadLink threadOrg" href="#"></a><div></div><a rel="leanModal" onclick="populateModal($(this)); return true;" class="threadLink threadCat" href="#"></a></div></div>');
+	$('.threads').append('<div class="thread js-tilt"><a rel="leanModal" onclick="populateModal($(this)); return true;" class="threadLink mainImg" href="#modalPopup"></a><div class="threadDetails"><a rel="leanModal" onclick="populateModal($(this.parents); return true;" class="threadLink threadTitle" href="#modalPopup"></a><a rel="leanModal" onclick="populateModal($(this)); return true;" class="threadLink threadOrg" href="#"></a><div></div><a rel="leanModal" onclick="populateModal($(this)); return true;" class="threadLink threadCat" href="#"></a></div></div>');
 
 	$('.thread:nth-of-type('+(i+1)+')').addClass(threads[i].id).attr('id', i);
-	$('.thread .mainImg').css('background-image', threads[i].mainImg);
-	$('.thread .threadCat').html(threads[i].cat);
-	$('.thread .threadTitle').html(threads[i].title);
-	$('.thread .threadOrg').html(threads[i].org);
-	console.log(threads[i].id);
+	$('.thread:nth-of-type('+(i+1)+') .mainImg').css('background-image', threads[i].mainImg);
+	$('.thread:nth-of-type('+(i+1)+') .threadCat').html(threads[i].cat);
+	$('.thread:nth-of-type('+(i+1)+') .threadTitle').html(threads[i].title);
+	$('.thread:nth-of-type('+(i+1)+') .threadOrg').html(threads[i].org);
 }
 
+//Add Dynamic Content (Could Have) http://www.developphp.com/video/JavaScript/Scroll-Load-Dynamic-Content-When-User-Reach-Bottom-Ajax
 
 $(window).scroll(function (event) {
 	var distanceScrolled = $(window).scrollTop();

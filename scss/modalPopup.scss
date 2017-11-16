@@ -1,3 +1,4 @@
+$block-color: #232323;
 /* Modal Popup */
 #modalPopup {
 	display: none;
@@ -7,79 +8,151 @@
 	background-color: white;
 	border: 2px solid white;
 
-	width: 95vw;
-	height: 90vh;
-	overflow: scroll;
+	width: 93vw;
+	height: 93vh;
+	overflow: auto;
 
 	margin: 0 auto;
 
-	padding: 30px;
+	padding: 10px 20px;
 }
+
 #modalPopup .modal_close {
-	position: absolute;
+	position: fixed;
 	top: 15px;
 	right: 15px;
 	width: 20px;
+	svg .X{
+		fill: white;
+	}
 	svg:hover .X {
 			fill: grey;
 	}
 }
-#modalPopup .projectSide {
-	.mainImg {
-		position: relative;
-		margin-top: 15px;
-		margin-bottom: 30px;
-		border-radius: 50%;
-		width: 200px;
-		padding-top: 200px; /*to set the same as width, because height: 100% isn't working */
 
-		margin: 0 auto;
-	}
+#modalPopup .projectSide {
+	padding-right: 1vw;
 }
+
 #modalPopup .projectHead {
-	//daf
+	align-self: flex-start;
+	width: 100%;
+	color: white;
+	background-color: $block-color;
+	border-color: $block-color;
+	padding: 30px 20px;
+
+	.cat{
+		font-weight: lighter;
+		font-size: 16px;
+		padding-bottom: 5px;
+	}
+
+	.org{
+		font-weight: lighter;
+		font-style: italic;
+		font-size: 10px;
+	}
+
+	.title{
+		font-weight: bold;
+		font-size: 40px;
+		margin-top: 5px;
+		margin-bottom: 20px;
+	}
+
+	.subtitle{
+		font-weight: normal;
+		font-size: 14px;
+		margin-right: 25vw;
+	}
+
 }
+
 #modalPopup .projectDetails {
-	//adfsa
+	// .mainImg {
+	// 	position: relative;
+	// 	margin-top: 15px;
+	// 	margin-bottom: 30px;
+	// 	width: 200px;
+	// 	padding-top: 200px; /*to set the same as width, because height: 100% isn't working */
+  //
+	// 	background-position: center;
+	// 	background-repeat: no-repeat;
+	// 	background-size: 90%;
+  //
+	// 	margin: 0 auto;
+	// }
+
+
 }
 #modalPopup .projectImages {
 	.imgDiv {
 		position: relative;
 		margin-top: 15px;
 		margin-bottom: 30px;
-		border-radius: 50%;
-		width: 200px;
-		padding-top: 200px; /*to set the same as width, because height: 100% isn't working */
+		height: 600px;
+		width: 900px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		margin: 10px auto;
 
-		margin: 0 auto;
+		//adjust the text location
+		display: flex;
+		flex-direction: column-reverse;
+
 	}
+
+	.imgDiv:hover .imgTxt{
+		visibility: visible;
+		opacity: 1;
+
+	}
+
 	.imgTxt {
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0.5s, opacity 0.5s linear;
+
+		background: rgba(0, 0, 0, .7);
+		color: white;
+		padding: 30px 50px;
+
 		//asdf
 	}
 }
 #modalPopup .projectInfo {
-	.prob {
+
+	h1{
+		margin-bottom: 10px;
+
 	}
-	.sol {
-		//asdf
-	}
-	.fin {
-		//asdf
+	p{
+		padding: 0 20px;
+		line-height: 30px;
 	}
 
 }
 #modalPopup .devSide {
-	.devs {
-	}
-	.picOverlay {
+	display: flex;
+	float: right;
+	width: 30vw;
+	flex-direction: column;
+	align-items: center;
+	background-color: $block-color;
+	color: white;
+	padding: 20px;
+	position: fixed;
 
+	.devs{
+		padding: 10px 50px;
 	}
+
 	.devPic {
 
 	}
-	.devName {
 
-	}
 }
 #lean_overlay {
     position: fixed;
