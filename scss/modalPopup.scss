@@ -6,21 +6,28 @@ $block-color: #232323;
 	position: relative;
 
 	background-color: white;
-	border: 2px solid white;
+	border: 0px solid white;
+	border-radius: 2px;
 
 	width: 93vw;
 	height: 93vh;
-	overflow: auto;
+	overflow: scroll;
+	overflow-x: hidden;
 
 	margin: 0 auto;
 
-	padding: 10px 20px;
 }
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 
 #modalPopup .modal_close {
 	position: fixed;
 	top: 15px;
-	right: 15px;
+	right: 20px;
 	width: 20px;
 	svg .X{
 		fill: white;
@@ -31,7 +38,7 @@ $block-color: #232323;
 }
 
 #modalPopup .projectSide {
-	padding-right: 1vw;
+	margin: 10px;
 }
 
 #modalPopup .projectHead {
@@ -87,16 +94,16 @@ $block-color: #232323;
 
 }
 #modalPopup .projectImages {
+
 	.imgDiv {
 		position: relative;
 		margin-top: 15px;
 		margin-bottom: 30px;
-		height: 600px;
-		width: 900px;
+		height: 520px;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 100%;
-		margin: 10px auto;
+		margin: 10px 0;
 
 		//adjust the text location
 		display: flex;
@@ -136,14 +143,18 @@ $block-color: #232323;
 }
 #modalPopup .devSide {
 	display: flex;
-	float: right;
-	width: 30vw;
+	width: 80vw;
 	flex-direction: column;
 	align-items: center;
-	background-color: $block-color;
-	color: white;
-	padding: 20px;
-	position: fixed;
+
+	#devSide-fixed {
+		width: 244px;
+		height: 600px;
+		position: fixed;
+		background-color: $block-color;
+		color: white;
+
+	}
 
 	.devs{
 		padding: 10px 50px;

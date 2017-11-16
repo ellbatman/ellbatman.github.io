@@ -49,7 +49,7 @@ Navigation
   margin-top: 240px;
   width: 100vw;
   height: 60px;
-  z-index: 10001;
+  z-index: 200;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -64,7 +64,7 @@ Navigation
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  z-index: 200;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   color: #0E5E5B;
   font-weight: 600; }
@@ -334,7 +334,7 @@ Main Content
   .thread a:hover {
     text-decoration: underline; }
   .thread:hover {
-    z-index: 99999; }
+    z-index: 100; }
 
 .mainImg {
   width: 100%;
@@ -442,17 +442,24 @@ Main Content
   display: none;
   position: relative;
   background-color: white;
-  border: 2px solid white;
+  border: 0px solid white;
+  border-radius: 2px;
   width: 93vw;
   height: 93vh;
-  overflow: auto;
-  margin: 0 auto;
-  padding: 10px 20px; }
+  overflow: scroll;
+  overflow-x: hidden;
+  margin: 0 auto; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */ }
 
 #modalPopup .modal_close {
   position: fixed;
   top: 15px;
-  right: 15px;
+  right: 20px;
   width: 20px; }
   #modalPopup .modal_close svg .X {
     fill: white; }
@@ -460,7 +467,7 @@ Main Content
     fill: grey; }
 
 #modalPopup .projectSide {
-  padding-right: 1vw; }
+  margin: 10px; }
 
 #modalPopup .projectHead {
   align-self: flex-start;
@@ -491,12 +498,11 @@ Main Content
   position: relative;
   margin-top: 15px;
   margin-bottom: 30px;
-  height: 600px;
-  width: 900px;
+  height: 520px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 10px auto;
+  margin: 10px 0;
   display: flex;
   flex-direction: column-reverse; }
 #modalPopup .projectImages .imgDiv:hover .imgTxt {
@@ -518,14 +524,15 @@ Main Content
 
 #modalPopup .devSide {
   display: flex;
-  float: right;
-  width: 30vw;
+  width: 80vw;
   flex-direction: column;
-  align-items: center;
-  background-color: #232323;
-  color: white;
-  padding: 20px;
-  position: fixed; }
+  align-items: center; }
+  #modalPopup .devSide #devSide-fixed {
+    width: 244px;
+    height: 600px;
+    position: fixed;
+    background-color: #232323;
+    color: white; }
   #modalPopup .devSide .devs {
     padding: 10px 50px; }
 
