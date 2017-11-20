@@ -23,6 +23,7 @@ body {
 img {
     max-width: 100%;
   }
+
 main {
   @extend %animation;
   display: flex;
